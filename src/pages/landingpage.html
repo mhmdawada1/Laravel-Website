@@ -4,25 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kofi-Sign Up</title>
+  <link rel="stylesheet" href="/src/styles/register.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="navbar">
     <div class="logo-section">
-      <span class="name">KOFI.</span>
-      <img class="logo" src="/assets/Screenshot 2023-07-28 at 12.57.49 AM.png" alt="kofi logo">
+      <img class="logo" src="/assets/Screenshot 2023-07-28 at 12.57.49 AM_thumbnail.png" alt="kofi logo">
     </div>
     <div class="navbar-list">
       <ul>
-        <li><a>About Us</a></li>
-        <li><a>Menu</a></li>
-        <li><a>Contact</a></li>
+        <a href="#about-me"><li id="aboutus-nav">About Us</li></a>
+        <a><li id="menu-nav">Menu</li></a>
+        <a><li id="contact-nav">Contact</li></a>
+        <a><li id="location-nav">Location</li></a>
       </ul>
     </div>
     <div class="navbar-profile">
       <svg class="cart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/> </svg>
       <svg class="person" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16"> <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/> <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/> </svg>
     </div>
-
+</div>
+<div id="about-me">
+  <div class="about-me-text">
+    <h2>KOFI - About Us</h2>
+    <p>Kofi was founded by Mohammad Awada and Christopher Yammine in 2023. With its thrilling atmosphere and unique menu, Kofi remains one of the top coffeeshops in Beirut with 8 locations and over 100 employees. Kofi aims to become the getaway of all people all around Lebanon since Kofi is a place that is open for diversity and inclusion.</p>
   </div>
+  <div class="about-me-image">
+    <img class="logo-about" src="/assets/Screenshot 2023-07-28 at 12.57.49 AM_thumbnail.png" alt="Profile Picture">
+  </div>
+</div>
+
 </body>
 </html>
