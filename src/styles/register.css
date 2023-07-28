@@ -79,7 +79,7 @@ svg:hover{
 #mission{
   display: flex;
   flex-direction: column;
-  height: 530px;
+  height: 620px;
   background-image: url(/assets/top-view-cup-coffee-with-roasted-beans.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -119,4 +119,16 @@ a:visited{
   font-size: 16px;
   margin-top: 15px;
 
+}
+#products-desc{
+  background-image: url(/assets/Studio_Project_V1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.products-text{
+  margin-right: 500px;
+  margin-left: 50px;
+  line-height: 0.8cm;
+  padding-top: 50px;
+  height: 620px;
 }
