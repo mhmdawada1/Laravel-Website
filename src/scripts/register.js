@@ -6,15 +6,23 @@ register.addEventListener("click",async (e) => {
   lname = document.getElementById("lname").value;
   email = document.getElementById("email-up").value;
   password = document.getElementById("password-up").value;
-  data = new FormData();
-  data.append("fname",fname);
-  data.append("lname",lname);
-  data.append("email",email);
-  data.append("password",password);
+  const data = new FormData();
+  data.append("fname", fname);
+  data.append("lname", lname);
+  data.append("email", email);
+  data.append("password", password);
+  const userData = {};
+  data.forEach((value, key) => {
+    userData[key] = value;
+  });
+  console.log(userData);
   try{
-    const response = await fetch(,{
-      method: POST,
-      body: data
+    const response = await fetch("http://localhost:8000/e-commerce/api/users",{
+      method: 'POST',
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(userData)
     });
     const result = response.json();
     if (result.status == "next step") {
