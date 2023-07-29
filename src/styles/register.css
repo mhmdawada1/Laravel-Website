@@ -1,5 +1,8 @@
 body{
   font-family: Noto Sans Mono, sans-serif;
+  background-image: url("/assets/coffee-beans-with-props-making-coffee.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .navbar{
   display: flex;
@@ -29,7 +32,7 @@ ul li{
   color: #306559;
 }
 li:hover{
-  color: #ffc914;
+  color: #363636;
 }
 
 svg{
@@ -40,95 +43,57 @@ svg{
   color: #306559;
 }
 svg:hover{
-  color: #ffc914;
-}
-#about-us {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 380px;
-  margin: 0 auto;
-  padding: 20px;
-}
-.mission-text{
-  padding-left: 20px;
-  margin-left: 700px;
-  margin-right: 50px;
-  line-height: 0.8cm;
   color: #363636;
 }
-.about-me-text {
-  flex: 1;
-  padding-right: 20px;
-  margin-right: 0;
-  margin-left: 50px;
-  line-height: 0.8cm;
-}
-
-.about-me-image {
-  flex-shrink: 0;
-}
-
-
-.about-me-image img {
-  max-width: 100%;
-  border-radius: 50%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-left: 0;
-}
-#mission{
+.signup-section{
   display: flex;
   flex-direction: column;
-  height: 620px;
-  background-image: url(/assets/top-view-cup-coffee-with-roasted-beans.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  justify-content: center; 
+   align-items: center;
+  background-color: rgba(255,255,255,0.85);
+  border-radius: 15px;
+  width: 500px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.mission-image{
-
-  margin-left: 0;
+.signin-logo{
+  width: 200px;
+  height: 150px;
+  margin-left: 80px;
+}
+input {
+  width: 350px;
+  height: 40px;
+  border-radius: 5px;
+}
+input::placeholder{
+  font-family: 'Noto Sans Mono',sans-serif;
+}
+.signin-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.3cm;
+}
+h2{
   text-align: center;
 }
-.logo-about{
-  width: 350px;
-  height: 230px;
-  padding: 0;
-  margin: 20px auto;
-}
 a{
-  text-decoration: none;
+  font-size: 13px;
 }
-a:visited{
-  color: #363636;
-}
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.aboutus-button{
+.btn-in{
   background-color: #306559;
+  border: none;
   border-radius: 5px;
   font-family: 'Noto Sans Mono',sans-serif;
-  color: #fff;
-  border: none;
-  height: 35px;
-  width: 120px;
-  font-size: 16px;
-  margin-top: 15px;
+  width: 90px;
+  height: 30px;
+  color: #f1f1f1;
 
 }
-#products-desc{
-  background-image: url(/assets/Studio_Project_V1.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.products-text{
-  margin-right: 500px;
-  margin-left: 50px;
-  line-height: 0.8cm;
-  padding-top: 50px;
-  height: 620px;
+.page-logo{
+  width: 150px;
+  height: 150px;
 }
