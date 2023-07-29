@@ -125,11 +125,62 @@ a:visited{
   background-image: url(/assets/Studio_Project_V1.png);
   background-size: cover;
   background-repeat: no-repeat;
+  height: 700px;
+
 }
 .products-text{
   margin-right: 500px;
   margin-left: 50px;
   line-height: 0.8cm;
   padding-top: 50px;
-  height: 620px;
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 5px;
+  margin-top: 50px;
+}
+
+.icon {
+  color: #000; 
+}
+
+.newsletter {
+  margin-top: 20px;
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+input[type="email"] {
+  padding: 5px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 5px 15px;
+  background-color: #306559; 
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #363636; 
 }
