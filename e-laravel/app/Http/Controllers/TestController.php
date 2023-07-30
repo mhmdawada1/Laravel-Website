@@ -5,28 +5,26 @@ namespace App\Http\Controllers;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
-use Illuminate\Http\Request; // Import the Request class
+use Illuminate\Http\Request;
 use App\Models\User;
 
 class TestController extends BaseController
 {
-    public function store(Request $request) // Inject the Request object here
+    public function store(Request $request)
     {
         $validatedData = $request->validate([
             'name' => 'required',
-            'email' => 'required', // Add more validation rules here...
+            'email' => 'required',
             'password' => 'required|min:6',
         ]);
 
         $user = User::create([
-            'fname' => $validatedData['name'],
+            'name' => $validatedData['name'],
             'email' => $validatedData['email'],
             'password' => bcrypt($validatedData['password']),
         ]);
 
-        // auth()->login($user);
-
-        // Optionally, you can return a response to indicate success or failure.
-        return response()->json(['message' => 'User created successfully']);
+       $responseData =  ['message' => 'User created successfully', 'status' => 'next step'];
+       return response->json($responseData);
     }
 }
