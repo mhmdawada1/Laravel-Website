@@ -26,8 +26,8 @@ class TestController extends BaseController
         ]);
 
         $token = Auth::login($user);
-        
-       $responseData =  ['message' => 'User created successfully', 'status' => 'next step'];
-       return response->json($responseData);
+
+       $responseData =  ['message' => 'User created successfully', 'status' => 'next step','token' => $token];
+       return response()->json($responseData);
     }
 }
