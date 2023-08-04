@@ -1,6 +1,6 @@
 const login = document.getElementById("login-btn");
 
-login.addEventListener("click", async (e) => {
+login.addEventListener("click", async () => {
   e.preventDefault();
   email = document.getElementById("email-in").value;
   password = document.getElementById("password-in").value;
@@ -9,13 +9,13 @@ login.addEventListener("click", async (e) => {
   data.append("email",email);
   data.append("password",password);
   try{
-    const response = await fetch(,{
-      method : POST,
+    const response = await fetch("",{
+      method : "POST",
       body : data
     });
     const res = await response.json();
 
-    if (res.status == "next step"){
+    if (res.status == "success"){
       window.location.href = "/src/pages/landingpage.html";
     }
     else {
