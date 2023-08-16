@@ -18,7 +18,7 @@ class AuthController extends Controller
             return response()->json(['error' => 'Unauthorized'], 401);
         }
 
-        return $token;
+        return response()->json(['status' => 'proceed'], 200);
     }
 
     public function register(Request $request){
@@ -34,6 +34,6 @@ class AuthController extends Controller
             'password' => Hash::make($request->password)
         ]);
 
-        return $user;
+        return response()->json(['status' => 'next step'], 200);
     }
 }
